@@ -1,7 +1,6 @@
 [debug] Other repositories:
 [debug] Default repositories:
 [debug] Using inline dependencies specified in Scala.
-[debug] no default cache defined: set to C:\Users\ashu\.ivy2\cache
 [debug] :: resolving dependencies :: testscala#testscala$sbt_2.10;1.0
 [debug] 	confs: [default]
 [debug] 	validate = true
@@ -1775,9 +1774,9 @@
 [debug] 	[NOT REQUIRED] org.scala-sbt#test-interface;1.0!test-interface.jar
 [debug] 	[NOT REQUIRED] org.scala-sbt#apply-macro;0.13.13!apply-macro.jar
 [debug] 	[NOT REQUIRED] org.scala-sbt#template-resolver;0.1!template-resolver.jar
-[debug] :: resolution report :: resolve 1195ms :: artifacts dl 68ms
+[debug] :: resolution report :: resolve 4802ms :: artifacts dl 207ms
 [debug] 	report for testscala#testscala$sbt_2.10;1.0 default produced in C:\Users\ashu\ChatServer\target\resolution-cache\reports\testscala-testscala$sbt_2.10-default.xml
-[debug] 	resolve done (1195ms resolve - 68ms download)
+[debug] 	resolve done (4802ms resolve - 207ms download)
 [debug] Using inline dependencies specified in Scala.
 [debug] :: resolving dependencies :: testscala#testscala$sources_2.10;1.0
 [debug] 	confs: [default]
@@ -2471,6 +2470,6 @@
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-compiler;2.10.6!scala-compiler.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-sbt#interface;0.13.13!interface.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-sbt#logging;0.13.13!logging.jar(src)
-[debug] :: resolution report :: resolve 482ms :: artifacts dl 103ms
+[debug] :: resolution report :: resolve 1127ms :: artifacts dl 279ms
 [debug] 	report for testscala#testscala$sources_2.10;1.0 default produced in C:\Users\ashu\ChatServer\target\resolution-cache\reports\testscala-testscala$sources_2.10-default.xml
-[debug] 	resolve done (482ms resolve - 103ms download)
+[debug] 	resolve done (1127ms resolve - 279ms download)
