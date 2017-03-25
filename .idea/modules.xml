@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/chatserver.iml" filepath="$PROJECT_DIR$/.idea/modules/chatserver.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/chatserver-build.iml" filepath="$PROJECT_DIR$/.idea/modules/chatserver-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/scalabalechat.iml" filepath="$PROJECT_DIR$/.idea/modules/scalabalechat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/scalabalechat-build.iml" filepath="$PROJECT_DIR$/.idea/modules/scalabalechat-build.iml" />
     </modules>
   </component>
 </project>
