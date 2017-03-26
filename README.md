@@ -5,4 +5,4 @@ A distributed, fault tolerant chat server made with Scala and Akka
 My intent for this project is to learn Scala and Akka.
 
 # Flow Graph
-![alt tag](https://raw.githubusercontent.com/ashsingh21/ChatServer/master/FlowGraph. jpg)
+[[https://github.com/ashsingh21/ChatServer/blob/master/FlowGraph.jpg|alt=Graph]]
