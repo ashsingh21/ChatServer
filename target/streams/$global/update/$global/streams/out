@@ -1,11 +1,11 @@
-[info] Updating {file:/C:/Users/ashu/Documents/ScalabaleChat/}scalabalechat...
-[debug] :: resolving dependencies :: default#scalabalechat_2.12;1.0
+[info] Updating {file:/C:/Users/ashu/ChatServer/}chatserver...
+[debug] :: resolving dependencies :: scalabalechat#scalabalechat_2.12;1.0
 [debug] 	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool]
 [debug] 	validate = true
 [debug] 	refresh = false
 [debug] resolving dependencies for configuration 'compile'
-[debug] == resolving dependencies for default#scalabalechat_2.12;1.0 [compile]
-[debug] == resolving dependencies default#scalabalechat_2.12;1.0->org.scala-lang#scala-library;2.12.1 [compile->default(compile)]
+[debug] == resolving dependencies for scalabalechat#scalabalechat_2.12;1.0 [compile]
+[debug] == resolving dependencies scalabalechat#scalabalechat_2.12;1.0->org.scala-lang#scala-library;2.12.1 [compile->default(compile)]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.1 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)], compile=[default(compile)]}
 [info] Resolving org.scala-lang#scala-library;2.12.1 ...
@@ -13,10 +13,10 @@
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scala-library;2.12.1
 [debug] 	found org.scala-lang#scala-library;2.12.1 in sbt-chain
 [debug] 	[2.12.1] org.scala-lang#scala-library;2.12.1
-[debug] == resolving dependencies default#scalabalechat_2.12;1.0->org.scala-lang#scala-library;2.12.1 [compile->runtime]
-[debug] == resolving dependencies default#scalabalechat_2.12;1.0->org.scala-lang#scala-library;2.12.1 [compile->compile]
-[debug] == resolving dependencies default#scalabalechat_2.12;1.0->org.scala-lang#scala-library;2.12.1 [compile->master]
-[debug] == resolving dependencies default#scalabalechat_2.12;1.0->com.typesafe.akka#akka-actor_2.12;2.4.17 [compile->default(compile)]
+[debug] == resolving dependencies scalabalechat#scalabalechat_2.12;1.0->org.scala-lang#scala-library;2.12.1 [compile->runtime]
+[debug] == resolving dependencies scalabalechat#scalabalechat_2.12;1.0->org.scala-lang#scala-library;2.12.1 [compile->compile]
+[debug] == resolving dependencies scalabalechat#scalabalechat_2.12;1.0->org.scala-lang#scala-library;2.12.1 [compile->master]
+[debug] == resolving dependencies scalabalechat#scalabalechat_2.12;1.0->com.typesafe.akka#akka-actor_2.12;2.4.17 [compile->default(compile)]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.1 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)], compile=[default(compile)]}
 [info] Resolving com.typesafe.akka#akka-actor_2.12;2.4.17 ...
@@ -24,8 +24,8 @@
 [debug] sbt-chain: module revision found in cache: com.typesafe.akka#akka-actor_2.12;2.4.17
 [debug] 	found com.typesafe.akka#akka-actor_2.12;2.4.17 in sbt-chain
 [debug] 	[2.4.17] com.typesafe.akka#akka-actor_2.12;2.4.17
-[debug] == resolving dependencies default#scalabalechat_2.12;1.0->com.typesafe.akka#akka-actor_2.12;2.4.17 [compile->runtime]
-[debug] == resolving dependencies default#scalabalechat_2.12;1.0->com.typesafe.akka#akka-actor_2.12;2.4.17 [compile->compile]
+[debug] == resolving dependencies scalabalechat#scalabalechat_2.12;1.0->com.typesafe.akka#akka-actor_2.12;2.4.17 [compile->runtime]
+[debug] == resolving dependencies scalabalechat#scalabalechat_2.12;1.0->com.typesafe.akka#akka-actor_2.12;2.4.17 [compile->compile]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 [debug] == resolving dependencies com.typesafe.akka#akka-actor_2.12;2.4.17->org.scala-lang#scala-library;2.12.1 [compile->master(compile)]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
@@ -85,18 +85,18 @@
 [debug] == resolving dependencies com.typesafe.akka#akka-actor_2.12;2.4.17->com.typesafe#config;1.3.0 [runtime->compile]
 [debug] == resolving dependencies com.typesafe.akka#akka-actor_2.12;2.4.17->org.scala-lang.modules#scala-java8-compat_2.12;0.8.0 [runtime->runtime(*)]
 [debug] == resolving dependencies com.typesafe.akka#akka-actor_2.12;2.4.17->org.scala-lang.modules#scala-java8-compat_2.12;0.8.0 [runtime->compile]
-[debug] == resolving dependencies default#scalabalechat_2.12;1.0->com.typesafe.akka#akka-actor_2.12;2.4.17 [compile->master]
+[debug] == resolving dependencies scalabalechat#scalabalechat_2.12;1.0->com.typesafe.akka#akka-actor_2.12;2.4.17 [compile->master]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
-[debug] == resolving dependencies default#scalabalechat_2.12;1.0->com.typesafe.akka#akka-http_2.12;10.0.5 [compile->default(compile)]
+[debug] == resolving dependencies scalabalechat#scalabalechat_2.12;1.0->com.typesafe.akka#akka-http_2.12;10.0.5 [compile->default(compile)]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.1 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)], compile=[default(compile)]}
 [info] Resolving com.typesafe.akka#akka-http_2.12;10.0.5 ...
 [debug] sbt-chain: Checking cache for: dependency: com.typesafe.akka#akka-http_2.12;10.0.5 {compile=[default(compile)]}
 [debug] sbt-chain: module revision found in cache: com.typesafe.akka#akka-http_2.12;10.0.5
 [debug] 	found com.typesafe.akka#akka-http_2.12;10.0.5 in sbt-chain
-[debug] == resolving dependencies default#scalabalechat_2.12;1.0->com.typesafe.akka#akka-http_2.12;10.0.5 [compile->runtime]
-[debug] == resolving dependencies default#scalabalechat_2.12;1.0->com.typesafe.akka#akka-http_2.12;10.0.5 [compile->compile]
+[debug] == resolving dependencies scalabalechat#scalabalechat_2.12;1.0->com.typesafe.akka#akka-http_2.12;10.0.5 [compile->runtime]
+[debug] == resolving dependencies scalabalechat#scalabalechat_2.12;1.0->com.typesafe.akka#akka-http_2.12;10.0.5 [compile->compile]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 [debug] == resolving dependencies com.typesafe.akka#akka-http_2.12;10.0.5->org.scala-lang#scala-library;2.12.1 [compile->master(compile)]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
@@ -360,27 +360,27 @@
 [debug] == resolving dependencies com.typesafe.akka#akka-http_2.12;10.0.5->org.scala-lang#scala-library;2.12.1 [runtime->compile]
 [debug] == resolving dependencies com.typesafe.akka#akka-http_2.12;10.0.5->com.typesafe.akka#akka-http-core_2.12;10.0.5 [runtime->runtime(*)]
 [debug] == resolving dependencies com.typesafe.akka#akka-http_2.12;10.0.5->com.typesafe.akka#akka-http-core_2.12;10.0.5 [runtime->compile]
-[debug] == resolving dependencies default#scalabalechat_2.12;1.0->com.typesafe.akka#akka-http_2.12;10.0.5 [compile->master]
+[debug] == resolving dependencies scalabalechat#scalabalechat_2.12;1.0->com.typesafe.akka#akka-http_2.12;10.0.5 [compile->master]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 [debug] resolving dependencies for configuration 'runtime'
-[debug] == resolving dependencies for default#scalabalechat_2.12;1.0 [runtime]
-[debug] == resolving dependencies for default#scalabalechat_2.12;1.0 [compile]
-[debug] == resolving dependencies default#scalabalechat_2.12;1.0->org.scala-lang#scala-library;2.12.1 [compile->default(compile)]
+[debug] == resolving dependencies for scalabalechat#scalabalechat_2.12;1.0 [runtime]
+[debug] == resolving dependencies for scalabalechat#scalabalechat_2.12;1.0 [compile]
+[debug] == resolving dependencies scalabalechat#scalabalechat_2.12;1.0->org.scala-lang#scala-library;2.12.1 [compile->default(compile)]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.1 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)], compile=[default(compile)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.1 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)], compile=[default(compile)]}
-[debug] == resolving dependencies default#scalabalechat_2.12;1.0->org.scala-lang#scala-library;2.12.1 [compile->runtime]
-[debug] == resolving dependencies default#scalabalechat_2.12;1.0->org.scala-lang#scala-library;2.12.1 [compile->compile]
-[debug] == resolving dependencies default#scalabalechat_2.12;1.0->org.scala-lang#scala-library;2.12.1 [compile->master]
-[debug] == resolving dependencies default#scalabalechat_2.12;1.0->com.typesafe.akka#akka-actor_2.12;2.4.17 [compile->default(compile)]
+[debug] == resolving dependencies scalabalechat#scalabalechat_2.12;1.0->org.scala-lang#scala-library;2.12.1 [compile->runtime]
+[debug] == resolving dependencies scalabalechat#scalabalechat_2.12;1.0->org.scala-lang#scala-library;2.12.1 [compile->compile]
+[debug] == resolving dependencies scalabalechat#scalabalechat_2.12;1.0->org.scala-lang#scala-library;2.12.1 [compile->master]
+[debug] == resolving dependencies scalabalechat#scalabalechat_2.12;1.0->com.typesafe.akka#akka-actor_2.12;2.4.17 [compile->default(compile)]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.1 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)], compile=[default(compile)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.1 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)], compile=[default(compile)]}
-[debug] == resolving dependencies default#scalabalechat_2.12;1.0->com.typesafe.akka#akka-actor_2.12;2.4.17 [compile->runtime]
-[debug] == resolving dependencies default#scalabalechat_2.12;1.0->com.typesafe.akka#akka-actor_2.12;2.4.17 [compile->compile]
+[debug] == resolving dependencies scalabalechat#scalabalechat_2.12;1.0->com.typesafe.akka#akka-actor_2.12;2.4.17 [compile->runtime]
+[debug] == resolving dependencies scalabalechat#scalabalechat_2.12;1.0->com.typesafe.akka#akka-actor_2.12;2.4.17 [compile->compile]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 [debug] == resolving dependencies com.typesafe.akka#akka-actor_2.12;2.4.17->org.scala-lang#scala-library;2.12.1 [compile->master(compile)]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
@@ -430,16 +430,16 @@
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 [debug] == resolving dependencies org.scala-lang.modules#scala-java8-compat_2.12;0.8.0->org.scala-lang#scala-library;2.12.1 [runtime->runtime(*)]
 [debug] == resolving dependencies org.scala-lang.modules#scala-java8-compat_2.12;0.8.0->org.scala-lang#scala-library;2.12.1 [runtime->compile]
-[debug] == resolving dependencies default#scalabalechat_2.12;1.0->com.typesafe.akka#akka-actor_2.12;2.4.17 [compile->master]
+[debug] == resolving dependencies scalabalechat#scalabalechat_2.12;1.0->com.typesafe.akka#akka-actor_2.12;2.4.17 [compile->master]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
-[debug] == resolving dependencies default#scalabalechat_2.12;1.0->com.typesafe.akka#akka-http_2.12;10.0.5 [compile->default(compile)]
+[debug] == resolving dependencies scalabalechat#scalabalechat_2.12;1.0->com.typesafe.akka#akka-http_2.12;10.0.5 [compile->default(compile)]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.1 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)], compile=[default(compile)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.1 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)], compile=[default(compile)]}
-[debug] == resolving dependencies default#scalabalechat_2.12;1.0->com.typesafe.akka#akka-http_2.12;10.0.5 [compile->runtime]
-[debug] == resolving dependencies default#scalabalechat_2.12;1.0->com.typesafe.akka#akka-http_2.12;10.0.5 [compile->compile]
+[debug] == resolving dependencies scalabalechat#scalabalechat_2.12;1.0->com.typesafe.akka#akka-http_2.12;10.0.5 [compile->runtime]
+[debug] == resolving dependencies scalabalechat#scalabalechat_2.12;1.0->com.typesafe.akka#akka-http_2.12;10.0.5 [compile->compile]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 [debug] == resolving dependencies com.typesafe.akka#akka-http_2.12;10.0.5->org.scala-lang#scala-library;2.12.1 [compile->master(compile)]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
@@ -688,32 +688,32 @@
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 [debug] == resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4->org.scala-lang#scala-library;2.12.1 [runtime->runtime(*)]
 [debug] == resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4->org.scala-lang#scala-library;2.12.1 [runtime->compile]
-[debug] == resolving dependencies default#scalabalechat_2.12;1.0->com.typesafe.akka#akka-http_2.12;10.0.5 [compile->master]
+[debug] == resolving dependencies scalabalechat#scalabalechat_2.12;1.0->com.typesafe.akka#akka-http_2.12;10.0.5 [compile->master]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 [debug] resolving dependencies for configuration 'test'
-[debug] == resolving dependencies for default#scalabalechat_2.12;1.0 [test]
-[debug] == resolving dependencies for default#scalabalechat_2.12;1.0 [runtime]
-[debug] == resolving dependencies for default#scalabalechat_2.12;1.0 [compile]
-[debug] == resolving dependencies default#scalabalechat_2.12;1.0->org.scala-lang#scala-library;2.12.1 [compile->default(compile)]
+[debug] == resolving dependencies for scalabalechat#scalabalechat_2.12;1.0 [test]
+[debug] == resolving dependencies for scalabalechat#scalabalechat_2.12;1.0 [runtime]
+[debug] == resolving dependencies for scalabalechat#scalabalechat_2.12;1.0 [compile]
+[debug] == resolving dependencies scalabalechat#scalabalechat_2.12;1.0->org.scala-lang#scala-library;2.12.1 [compile->default(compile)]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.1 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)], compile=[default(compile)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.1 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)], compile=[default(compile)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.1 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)], compile=[default(compile)]}
-[debug] == resolving dependencies default#scalabalechat_2.12;1.0->org.scala-lang#scala-library;2.12.1 [compile->runtime]
-[debug] == resolving dependencies default#scalabalechat_2.12;1.0->org.scala-lang#scala-library;2.12.1 [compile->compile]
-[debug] == resolving dependencies default#scalabalechat_2.12;1.0->org.scala-lang#scala-library;2.12.1 [compile->master]
-[debug] == resolving dependencies default#scalabalechat_2.12;1.0->com.typesafe.akka#akka-actor_2.12;2.4.17 [compile->default(compile)]
+[debug] == resolving dependencies scalabalechat#scalabalechat_2.12;1.0->org.scala-lang#scala-library;2.12.1 [compile->runtime]
+[debug] == resolving dependencies scalabalechat#scalabalechat_2.12;1.0->org.scala-lang#scala-library;2.12.1 [compile->compile]
+[debug] == resolving dependencies scalabalechat#scalabalechat_2.12;1.0->org.scala-lang#scala-library;2.12.1 [compile->master]
+[debug] == resolving dependencies scalabalechat#scalabalechat_2.12;1.0->com.typesafe.akka#akka-actor_2.12;2.4.17 [compile->default(compile)]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.1 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)], compile=[default(compile)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.1 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)], compile=[default(compile)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.1 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)], compile=[default(compile)]}
-[debug] == resolving dependencies default#scalabalechat_2.12;1.0->com.typesafe.akka#akka-actor_2.12;2.4.17 [compile->runtime]
-[debug] == resolving dependencies default#scalabalechat_2.12;1.0->com.typesafe.akka#akka-actor_2.12;2.4.17 [compile->compile]
+[debug] == resolving dependencies scalabalechat#scalabalechat_2.12;1.0->com.typesafe.akka#akka-actor_2.12;2.4.17 [compile->runtime]
+[debug] == resolving dependencies scalabalechat#scalabalechat_2.12;1.0->com.typesafe.akka#akka-actor_2.12;2.4.17 [compile->compile]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 [debug] == resolving dependencies com.typesafe.akka#akka-actor_2.12;2.4.17->org.scala-lang#scala-library;2.12.1 [compile->master(compile)]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
@@ -767,18 +767,18 @@
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 [debug] == resolving dependencies org.scala-lang.modules#scala-java8-compat_2.12;0.8.0->org.scala-lang#scala-library;2.12.1 [runtime->runtime(*)]
 [debug] == resolving dependencies org.scala-lang.modules#scala-java8-compat_2.12;0.8.0->org.scala-lang#scala-library;2.12.1 [runtime->compile]
-[debug] == resolving dependencies default#scalabalechat_2.12;1.0->com.typesafe.akka#akka-actor_2.12;2.4.17 [compile->master]
+[debug] == resolving dependencies scalabalechat#scalabalechat_2.12;1.0->com.typesafe.akka#akka-actor_2.12;2.4.17 [compile->master]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
-[debug] == resolving dependencies default#scalabalechat_2.12;1.0->com.typesafe.akka#akka-http_2.12;10.0.5 [compile->default(compile)]
+[debug] == resolving dependencies scalabalechat#scalabalechat_2.12;1.0->com.typesafe.akka#akka-http_2.12;10.0.5 [compile->default(compile)]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.1 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)], compile=[default(compile)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.1 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)], compile=[default(compile)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.1 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)], compile=[default(compile)]}
-[debug] == resolving dependencies default#scalabalechat_2.12;1.0->com.typesafe.akka#akka-http_2.12;10.0.5 [compile->runtime]
-[debug] == resolving dependencies default#scalabalechat_2.12;1.0->com.typesafe.akka#akka-http_2.12;10.0.5 [compile->compile]
+[debug] == resolving dependencies scalabalechat#scalabalechat_2.12;1.0->com.typesafe.akka#akka-http_2.12;10.0.5 [compile->runtime]
+[debug] == resolving dependencies scalabalechat#scalabalechat_2.12;1.0->com.typesafe.akka#akka-http_2.12;10.0.5 [compile->compile]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 [debug] == resolving dependencies com.typesafe.akka#akka-http_2.12;10.0.5->org.scala-lang#scala-library;2.12.1 [compile->master(compile)]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
@@ -1039,17 +1039,17 @@
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 [debug] == resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4->org.scala-lang#scala-library;2.12.1 [runtime->runtime(*)]
 [debug] == resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4->org.scala-lang#scala-library;2.12.1 [runtime->compile]
-[debug] == resolving dependencies default#scalabalechat_2.12;1.0->com.typesafe.akka#akka-http_2.12;10.0.5 [compile->master]
+[debug] == resolving dependencies scalabalechat#scalabalechat_2.12;1.0->com.typesafe.akka#akka-http_2.12;10.0.5 [compile->master]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 [debug] resolving dependencies for configuration 'provided'
-[debug] == resolving dependencies for default#scalabalechat_2.12;1.0 [provided]
+[debug] == resolving dependencies for scalabalechat#scalabalechat_2.12;1.0 [provided]
 [debug] resolving dependencies for configuration 'optional'
-[debug] == resolving dependencies for default#scalabalechat_2.12;1.0 [optional]
+[debug] == resolving dependencies for scalabalechat#scalabalechat_2.12;1.0 [optional]
 [debug] resolving dependencies for configuration 'compile-internal'
-[debug] == resolving dependencies for default#scalabalechat_2.12;1.0 [compile-internal]
-[debug] == resolving dependencies for default#scalabalechat_2.12;1.0 [compile]
-[debug] == resolving dependencies default#scalabalechat_2.12;1.0->org.scala-lang#scala-library;2.12.1 [compile->default(compile)]
+[debug] == resolving dependencies for scalabalechat#scalabalechat_2.12;1.0 [compile-internal]
+[debug] == resolving dependencies for scalabalechat#scalabalechat_2.12;1.0 [compile]
+[debug] == resolving dependencies scalabalechat#scalabalechat_2.12;1.0->org.scala-lang#scala-library;2.12.1 [compile->default(compile)]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.1 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)], compile=[default(compile)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]}
@@ -1058,10 +1058,10 @@
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.1 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)], compile=[default(compile)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.1 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)], compile=[default(compile)]}
-[debug] == resolving dependencies default#scalabalechat_2.12;1.0->org.scala-lang#scala-library;2.12.1 [compile->runtime]
-[debug] == resolving dependencies default#scalabalechat_2.12;1.0->org.scala-lang#scala-library;2.12.1 [compile->compile]
-[debug] == resolving dependencies default#scalabalechat_2.12;1.0->org.scala-lang#scala-library;2.12.1 [compile->master]
-[debug] == resolving dependencies default#scalabalechat_2.12;1.0->com.typesafe.akka#akka-actor_2.12;2.4.17 [compile->default(compile)]
+[debug] == resolving dependencies scalabalechat#scalabalechat_2.12;1.0->org.scala-lang#scala-library;2.12.1 [compile->runtime]
+[debug] == resolving dependencies scalabalechat#scalabalechat_2.12;1.0->org.scala-lang#scala-library;2.12.1 [compile->compile]
+[debug] == resolving dependencies scalabalechat#scalabalechat_2.12;1.0->org.scala-lang#scala-library;2.12.1 [compile->master]
+[debug] == resolving dependencies scalabalechat#scalabalechat_2.12;1.0->com.typesafe.akka#akka-actor_2.12;2.4.17 [compile->default(compile)]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.1 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)], compile=[default(compile)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]}
@@ -1070,8 +1070,8 @@
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.1 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)], compile=[default(compile)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.1 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)], compile=[default(compile)]}
-[debug] == resolving dependencies default#scalabalechat_2.12;1.0->com.typesafe.akka#akka-actor_2.12;2.4.17 [compile->runtime]
-[debug] == resolving dependencies default#scalabalechat_2.12;1.0->com.typesafe.akka#akka-actor_2.12;2.4.17 [compile->compile]
+[debug] == resolving dependencies scalabalechat#scalabalechat_2.12;1.0->com.typesafe.akka#akka-actor_2.12;2.4.17 [compile->runtime]
+[debug] == resolving dependencies scalabalechat#scalabalechat_2.12;1.0->com.typesafe.akka#akka-actor_2.12;2.4.17 [compile->compile]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 [debug] == resolving dependencies com.typesafe.akka#akka-actor_2.12;2.4.17->org.scala-lang#scala-library;2.12.1 [compile->master(compile)]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
@@ -1129,10 +1129,10 @@
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 [debug] == resolving dependencies org.scala-lang.modules#scala-java8-compat_2.12;0.8.0->org.scala-lang#scala-library;2.12.1 [runtime->runtime(*)]
 [debug] == resolving dependencies org.scala-lang.modules#scala-java8-compat_2.12;0.8.0->org.scala-lang#scala-library;2.12.1 [runtime->compile]
-[debug] == resolving dependencies default#scalabalechat_2.12;1.0->com.typesafe.akka#akka-actor_2.12;2.4.17 [compile->master]
+[debug] == resolving dependencies scalabalechat#scalabalechat_2.12;1.0->com.typesafe.akka#akka-actor_2.12;2.4.17 [compile->master]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
-[debug] == resolving dependencies default#scalabalechat_2.12;1.0->com.typesafe.akka#akka-http_2.12;10.0.5 [compile->default(compile)]
+[debug] == resolving dependencies scalabalechat#scalabalechat_2.12;1.0->com.typesafe.akka#akka-http_2.12;10.0.5 [compile->default(compile)]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.1 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)], compile=[default(compile)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]}
@@ -1141,8 +1141,8 @@
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.1 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)], compile=[default(compile)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.1 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)], compile=[default(compile)]}
-[debug] == resolving dependencies default#scalabalechat_2.12;1.0->com.typesafe.akka#akka-http_2.12;10.0.5 [compile->runtime]
-[debug] == resolving dependencies default#scalabalechat_2.12;1.0->com.typesafe.akka#akka-http_2.12;10.0.5 [compile->compile]
+[debug] == resolving dependencies scalabalechat#scalabalechat_2.12;1.0->com.typesafe.akka#akka-http_2.12;10.0.5 [compile->runtime]
+[debug] == resolving dependencies scalabalechat#scalabalechat_2.12;1.0->com.typesafe.akka#akka-http_2.12;10.0.5 [compile->compile]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 [debug] == resolving dependencies com.typesafe.akka#akka-http_2.12;10.0.5->org.scala-lang#scala-library;2.12.1 [compile->master(compile)]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
@@ -1415,16 +1415,16 @@
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 [debug] == resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4->org.scala-lang#scala-library;2.12.1 [runtime->runtime(*)]
 [debug] == resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4->org.scala-lang#scala-library;2.12.1 [runtime->compile]
-[debug] == resolving dependencies default#scalabalechat_2.12;1.0->com.typesafe.akka#akka-http_2.12;10.0.5 [compile->master]
+[debug] == resolving dependencies scalabalechat#scalabalechat_2.12;1.0->com.typesafe.akka#akka-http_2.12;10.0.5 [compile->master]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
-[debug] == resolving dependencies for default#scalabalechat_2.12;1.0 [optional]
-[debug] == resolving dependencies for default#scalabalechat_2.12;1.0 [provided]
+[debug] == resolving dependencies for scalabalechat#scalabalechat_2.12;1.0 [optional]
+[debug] == resolving dependencies for scalabalechat#scalabalechat_2.12;1.0 [provided]
 [debug] resolving dependencies for configuration 'runtime-internal'
-[debug] == resolving dependencies for default#scalabalechat_2.12;1.0 [runtime-internal]
-[debug] == resolving dependencies for default#scalabalechat_2.12;1.0 [runtime]
-[debug] == resolving dependencies for default#scalabalechat_2.12;1.0 [compile]
-[debug] == resolving dependencies default#scalabalechat_2.12;1.0->org.scala-lang#scala-library;2.12.1 [compile->default(compile)]
+[debug] == resolving dependencies for scalabalechat#scalabalechat_2.12;1.0 [runtime-internal]
+[debug] == resolving dependencies for scalabalechat#scalabalechat_2.12;1.0 [runtime]
+[debug] == resolving dependencies for scalabalechat#scalabalechat_2.12;1.0 [compile]
+[debug] == resolving dependencies scalabalechat#scalabalechat_2.12;1.0->org.scala-lang#scala-library;2.12.1 [compile->default(compile)]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.1 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)], compile=[default(compile)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]}
@@ -1433,10 +1433,10 @@
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.1 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)], compile=[default(compile)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.1 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)], compile=[default(compile)]}
-[debug] == resolving dependencies default#scalabalechat_2.12;1.0->org.scala-lang#scala-library;2.12.1 [compile->runtime]
-[debug] == resolving dependencies default#scalabalechat_2.12;1.0->org.scala-lang#scala-library;2.12.1 [compile->compile]
-[debug] == resolving dependencies default#scalabalechat_2.12;1.0->org.scala-lang#scala-library;2.12.1 [compile->master]
-[debug] == resolving dependencies default#scalabalechat_2.12;1.0->com.typesafe.akka#akka-actor_2.12;2.4.17 [compile->default(compile)]
+[debug] == resolving dependencies scalabalechat#scalabalechat_2.12;1.0->org.scala-lang#scala-library;2.12.1 [compile->runtime]
+[debug] == resolving dependencies scalabalechat#scalabalechat_2.12;1.0->org.scala-lang#scala-library;2.12.1 [compile->compile]
+[debug] == resolving dependencies scalabalechat#scalabalechat_2.12;1.0->org.scala-lang#scala-library;2.12.1 [compile->master]
+[debug] == resolving dependencies scalabalechat#scalabalechat_2.12;1.0->com.typesafe.akka#akka-actor_2.12;2.4.17 [compile->default(compile)]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.1 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)], compile=[default(compile)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]}
@@ -1445,8 +1445,8 @@
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.1 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)], compile=[default(compile)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.1 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)], compile=[default(compile)]}
-[debug] == resolving dependencies default#scalabalechat_2.12;1.0->com.typesafe.akka#akka-actor_2.12;2.4.17 [compile->runtime]
-[debug] == resolving dependencies default#scalabalechat_2.12;1.0->com.typesafe.akka#akka-actor_2.12;2.4.17 [compile->compile]
+[debug] == resolving dependencies scalabalechat#scalabalechat_2.12;1.0->com.typesafe.akka#akka-actor_2.12;2.4.17 [compile->runtime]
+[debug] == resolving dependencies scalabalechat#scalabalechat_2.12;1.0->com.typesafe.akka#akka-actor_2.12;2.4.17 [compile->compile]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 [debug] == resolving dependencies com.typesafe.akka#akka-actor_2.12;2.4.17->org.scala-lang#scala-library;2.12.1 [compile->master(compile)]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
@@ -1504,10 +1504,10 @@
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 [debug] == resolving dependencies org.scala-lang.modules#scala-java8-compat_2.12;0.8.0->org.scala-lang#scala-library;2.12.1 [runtime->runtime(*)]
 [debug] == resolving dependencies org.scala-lang.modules#scala-java8-compat_2.12;0.8.0->org.scala-lang#scala-library;2.12.1 [runtime->compile]
-[debug] == resolving dependencies default#scalabalechat_2.12;1.0->com.typesafe.akka#akka-actor_2.12;2.4.17 [compile->master]
+[debug] == resolving dependencies scalabalechat#scalabalechat_2.12;1.0->com.typesafe.akka#akka-actor_2.12;2.4.17 [compile->master]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
-[debug] == resolving dependencies default#scalabalechat_2.12;1.0->com.typesafe.akka#akka-http_2.12;10.0.5 [compile->default(compile)]
+[debug] == resolving dependencies scalabalechat#scalabalechat_2.12;1.0->com.typesafe.akka#akka-http_2.12;10.0.5 [compile->default(compile)]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.1 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)], compile=[default(compile)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]}
@@ -1516,8 +1516,8 @@
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.1 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)], compile=[default(compile)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.1 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)], compile=[default(compile)]}
-[debug] == resolving dependencies default#scalabalechat_2.12;1.0->com.typesafe.akka#akka-http_2.12;10.0.5 [compile->runtime]
-[debug] == resolving dependencies default#scalabalechat_2.12;1.0->com.typesafe.akka#akka-http_2.12;10.0.5 [compile->compile]
+[debug] == resolving dependencies scalabalechat#scalabalechat_2.12;1.0->com.typesafe.akka#akka-http_2.12;10.0.5 [compile->runtime]
+[debug] == resolving dependencies scalabalechat#scalabalechat_2.12;1.0->com.typesafe.akka#akka-http_2.12;10.0.5 [compile->compile]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 [debug] == resolving dependencies com.typesafe.akka#akka-http_2.12;10.0.5->org.scala-lang#scala-library;2.12.1 [compile->master(compile)]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
@@ -1790,16 +1790,16 @@
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 [debug] == resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4->org.scala-lang#scala-library;2.12.1 [runtime->runtime(*)]
 [debug] == resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4->org.scala-lang#scala-library;2.12.1 [runtime->compile]
-[debug] == resolving dependencies default#scalabalechat_2.12;1.0->com.typesafe.akka#akka-http_2.12;10.0.5 [compile->master]
+[debug] == resolving dependencies scalabalechat#scalabalechat_2.12;1.0->com.typesafe.akka#akka-http_2.12;10.0.5 [compile->master]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
-[debug] == resolving dependencies for default#scalabalechat_2.12;1.0 [optional]
+[debug] == resolving dependencies for scalabalechat#scalabalechat_2.12;1.0 [optional]
 [debug] resolving dependencies for configuration 'test-internal'
-[debug] == resolving dependencies for default#scalabalechat_2.12;1.0 [test-internal]
-[debug] == resolving dependencies for default#scalabalechat_2.12;1.0 [test]
-[debug] == resolving dependencies for default#scalabalechat_2.12;1.0 [runtime]
-[debug] == resolving dependencies for default#scalabalechat_2.12;1.0 [compile]
-[debug] == resolving dependencies default#scalabalechat_2.12;1.0->org.scala-lang#scala-library;2.12.1 [compile->default(compile)]
+[debug] == resolving dependencies for scalabalechat#scalabalechat_2.12;1.0 [test-internal]
+[debug] == resolving dependencies for scalabalechat#scalabalechat_2.12;1.0 [test]
+[debug] == resolving dependencies for scalabalechat#scalabalechat_2.12;1.0 [runtime]
+[debug] == resolving dependencies for scalabalechat#scalabalechat_2.12;1.0 [compile]
+[debug] == resolving dependencies scalabalechat#scalabalechat_2.12;1.0->org.scala-lang#scala-library;2.12.1 [compile->default(compile)]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.1 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)], compile=[default(compile)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]}
@@ -1812,10 +1812,10 @@
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.1 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)], compile=[default(compile)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.1 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)], compile=[default(compile)]}
-[debug] == resolving dependencies default#scalabalechat_2.12;1.0->org.scala-lang#scala-library;2.12.1 [compile->runtime]
-[debug] == resolving dependencies default#scalabalechat_2.12;1.0->org.scala-lang#scala-library;2.12.1 [compile->compile]
-[debug] == resolving dependencies default#scalabalechat_2.12;1.0->org.scala-lang#scala-library;2.12.1 [compile->master]
-[debug] == resolving dependencies default#scalabalechat_2.12;1.0->com.typesafe.akka#akka-actor_2.12;2.4.17 [compile->default(compile)]
+[debug] == resolving dependencies scalabalechat#scalabalechat_2.12;1.0->org.scala-lang#scala-library;2.12.1 [compile->runtime]
+[debug] == resolving dependencies scalabalechat#scalabalechat_2.12;1.0->org.scala-lang#scala-library;2.12.1 [compile->compile]
+[debug] == resolving dependencies scalabalechat#scalabalechat_2.12;1.0->org.scala-lang#scala-library;2.12.1 [compile->master]
+[debug] == resolving dependencies scalabalechat#scalabalechat_2.12;1.0->com.typesafe.akka#akka-actor_2.12;2.4.17 [compile->default(compile)]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.1 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)], compile=[default(compile)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]}
@@ -1828,8 +1828,8 @@
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.1 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)], compile=[default(compile)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.1 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)], compile=[default(compile)]}
-[debug] == resolving dependencies default#scalabalechat_2.12;1.0->com.typesafe.akka#akka-actor_2.12;2.4.17 [compile->runtime]
-[debug] == resolving dependencies default#scalabalechat_2.12;1.0->com.typesafe.akka#akka-actor_2.12;2.4.17 [compile->compile]
+[debug] == resolving dependencies scalabalechat#scalabalechat_2.12;1.0->com.typesafe.akka#akka-actor_2.12;2.4.17 [compile->runtime]
+[debug] == resolving dependencies scalabalechat#scalabalechat_2.12;1.0->com.typesafe.akka#akka-actor_2.12;2.4.17 [compile->compile]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 [debug] == resolving dependencies com.typesafe.akka#akka-actor_2.12;2.4.17->org.scala-lang#scala-library;2.12.1 [compile->master(compile)]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
@@ -1895,10 +1895,10 @@
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 [debug] == resolving dependencies org.scala-lang.modules#scala-java8-compat_2.12;0.8.0->org.scala-lang#scala-library;2.12.1 [runtime->runtime(*)]
 [debug] == resolving dependencies org.scala-lang.modules#scala-java8-compat_2.12;0.8.0->org.scala-lang#scala-library;2.12.1 [runtime->compile]
-[debug] == resolving dependencies default#scalabalechat_2.12;1.0->com.typesafe.akka#akka-actor_2.12;2.4.17 [compile->master]
+[debug] == resolving dependencies scalabalechat#scalabalechat_2.12;1.0->com.typesafe.akka#akka-actor_2.12;2.4.17 [compile->master]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
-[debug] == resolving dependencies default#scalabalechat_2.12;1.0->com.typesafe.akka#akka-http_2.12;10.0.5 [compile->default(compile)]
+[debug] == resolving dependencies scalabalechat#scalabalechat_2.12;1.0->com.typesafe.akka#akka-http_2.12;10.0.5 [compile->default(compile)]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.1 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)], compile=[default(compile)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]}
@@ -1911,8 +1911,8 @@
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.1 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)], compile=[default(compile)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.1 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)], compile=[default(compile)]}
-[debug] == resolving dependencies default#scalabalechat_2.12;1.0->com.typesafe.akka#akka-http_2.12;10.0.5 [compile->runtime]
-[debug] == resolving dependencies default#scalabalechat_2.12;1.0->com.typesafe.akka#akka-http_2.12;10.0.5 [compile->compile]
+[debug] == resolving dependencies scalabalechat#scalabalechat_2.12;1.0->com.typesafe.akka#akka-http_2.12;10.0.5 [compile->runtime]
+[debug] == resolving dependencies scalabalechat#scalabalechat_2.12;1.0->com.typesafe.akka#akka-http_2.12;10.0.5 [compile->compile]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 [debug] == resolving dependencies com.typesafe.akka#akka-http_2.12;10.0.5->org.scala-lang#scala-library;2.12.1 [compile->master(compile)]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
@@ -2209,30 +2209,30 @@
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 [debug] == resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4->org.scala-lang#scala-library;2.12.1 [runtime->runtime(*)]
 [debug] == resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4->org.scala-lang#scala-library;2.12.1 [runtime->compile]
-[debug] == resolving dependencies default#scalabalechat_2.12;1.0->com.typesafe.akka#akka-http_2.12;10.0.5 [compile->master]
+[debug] == resolving dependencies scalabalechat#scalabalechat_2.12;1.0->com.typesafe.akka#akka-http_2.12;10.0.5 [compile->master]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
-[debug] == resolving dependencies for default#scalabalechat_2.12;1.0 [optional]
-[debug] == resolving dependencies for default#scalabalechat_2.12;1.0 [provided]
+[debug] == resolving dependencies for scalabalechat#scalabalechat_2.12;1.0 [optional]
+[debug] == resolving dependencies for scalabalechat#scalabalechat_2.12;1.0 [provided]
 [debug] resolving dependencies for configuration 'plugin'
-[debug] == resolving dependencies for default#scalabalechat_2.12;1.0 [plugin]
+[debug] == resolving dependencies for scalabalechat#scalabalechat_2.12;1.0 [plugin]
 [debug] resolving dependencies for configuration 'sources'
-[debug] == resolving dependencies for default#scalabalechat_2.12;1.0 [sources]
+[debug] == resolving dependencies for scalabalechat#scalabalechat_2.12;1.0 [sources]
 [debug] resolving dependencies for configuration 'docs'
-[debug] == resolving dependencies for default#scalabalechat_2.12;1.0 [docs]
+[debug] == resolving dependencies for scalabalechat#scalabalechat_2.12;1.0 [docs]
 [debug] resolving dependencies for configuration 'pom'
-[debug] == resolving dependencies for default#scalabalechat_2.12;1.0 [pom]
+[debug] == resolving dependencies for scalabalechat#scalabalechat_2.12;1.0 [pom]
 [debug] resolving dependencies for configuration 'scala-tool'
-[debug] == resolving dependencies for default#scalabalechat_2.12;1.0 [scala-tool]
-[debug] == resolving dependencies default#scalabalechat_2.12;1.0->org.scala-lang#scala-compiler;2.12.1 [scala-tool->default]
+[debug] == resolving dependencies for scalabalechat#scalabalechat_2.12;1.0 [scala-tool]
+[debug] == resolving dependencies scalabalechat#scalabalechat_2.12;1.0->org.scala-lang#scala-compiler;2.12.1 [scala-tool->default]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.1 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)], compile=[default(compile)]}
 [info] Resolving org.scala-lang#scala-compiler;2.12.1 ...
 [debug] sbt-chain: Checking cache for: dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]}
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scala-compiler;2.12.1
 [debug] 	found org.scala-lang#scala-compiler;2.12.1 in sbt-chain
-[debug] == resolving dependencies default#scalabalechat_2.12;1.0->org.scala-lang#scala-compiler;2.12.1 [scala-tool->runtime]
-[debug] == resolving dependencies default#scalabalechat_2.12;1.0->org.scala-lang#scala-compiler;2.12.1 [scala-tool->compile]
+[debug] == resolving dependencies scalabalechat#scalabalechat_2.12;1.0->org.scala-lang#scala-compiler;2.12.1 [scala-tool->runtime]
+[debug] == resolving dependencies scalabalechat#scalabalechat_2.12;1.0->org.scala-lang#scala-compiler;2.12.1 [scala-tool->compile]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-reflect;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-reflect;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 [debug] == resolving dependencies org.scala-lang#scala-compiler;2.12.1->org.scala-lang#scala-library;2.12.1 [compile->master(compile)]
@@ -2335,12 +2335,12 @@
 [debug] == resolving dependencies org.scala-lang#scala-compiler;2.12.1->org.scala-lang#scala-reflect;2.12.1 [runtime->compile]
 [debug] == resolving dependencies org.scala-lang#scala-compiler;2.12.1->org.scala-lang.modules#scala-xml_2.12;1.0.6 [runtime->runtime(*)]
 [debug] == resolving dependencies org.scala-lang#scala-compiler;2.12.1->org.scala-lang.modules#scala-xml_2.12;1.0.6 [runtime->compile]
-[debug] == resolving dependencies default#scalabalechat_2.12;1.0->org.scala-lang#scala-compiler;2.12.1 [scala-tool->master]
+[debug] == resolving dependencies scalabalechat#scalabalechat_2.12;1.0->org.scala-lang#scala-compiler;2.12.1 [scala-tool->master]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-reflect;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-reflect;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-reflect;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-reflect;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
-[debug] == resolving dependencies default#scalabalechat_2.12;1.0->org.scala-lang#scala-compiler;2.12.1 [scala-tool->optional(default)]
+[debug] == resolving dependencies scalabalechat#scalabalechat_2.12;1.0->org.scala-lang#scala-compiler;2.12.1 [scala-tool->optional(default)]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-reflect;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-reflect;2.12.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 [debug] == resolving dependencies org.scala-lang#scala-compiler;2.12.1->jline#jline;2.14.1 [optional->master(compile)]
@@ -2363,11 +2363,11 @@
 [debug] sbt-chain: module revision found in cache: jline#jline;2.14.1
 [debug] 	found jline#jline;2.14.1 in sbt-chain
 [debug] == resolving dependencies org.scala-lang#scala-compiler;2.12.1->jline#jline;2.14.1 [optional->compile(*)]
-[debug] == resolving dependencies default#scalabalechat_2.12;1.0->org.scala-lang#scala-library;2.12.1 [scala-tool->default]
-[debug] == resolving dependencies default#scalabalechat_2.12;1.0->org.scala-lang#scala-library;2.12.1 [scala-tool->runtime]
-[debug] == resolving dependencies default#scalabalechat_2.12;1.0->org.scala-lang#scala-library;2.12.1 [scala-tool->compile]
-[debug] == resolving dependencies default#scalabalechat_2.12;1.0->org.scala-lang#scala-library;2.12.1 [scala-tool->master]
-[debug] == resolving dependencies default#scalabalechat_2.12;1.0->org.scala-lang#scala-library;2.12.1 [scala-tool->optional(default)]
+[debug] == resolving dependencies scalabalechat#scalabalechat_2.12;1.0->org.scala-lang#scala-library;2.12.1 [scala-tool->default]
+[debug] == resolving dependencies scalabalechat#scalabalechat_2.12;1.0->org.scala-lang#scala-library;2.12.1 [scala-tool->runtime]
+[debug] == resolving dependencies scalabalechat#scalabalechat_2.12;1.0->org.scala-lang#scala-library;2.12.1 [scala-tool->compile]
+[debug] == resolving dependencies scalabalechat#scalabalechat_2.12;1.0->org.scala-lang#scala-library;2.12.1 [scala-tool->master]
+[debug] == resolving dependencies scalabalechat#scalabalechat_2.12;1.0->org.scala-lang#scala-library;2.12.1 [scala-tool->optional(default)]
 [debug] ignoring unhandled DependencyDescriptorMediator: class sbt.IvyScala$OverrideScalaMediator
 [debug] 	resolved ivy file produced in cache
 [debug] :: downloading artifacts ::
@@ -2386,19 +2386,19 @@
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-reflect;2.12.1!scala-reflect.jar
 [debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.12;1.0.6!scala-xml_2.12.jar(bundle)
 [debug] 	[NOT REQUIRED] jline#jline;2.14.1!jline.jar
-[debug] :: resolution report :: resolve 2531ms :: artifacts dl 74ms
-[debug] 	report for default#scalabalechat_2.12;1.0 compile produced in C:\Users\ashu\Documents\ScalabaleChat\target\resolution-cache\reports\default-scalabalechat_2.12-compile.xml
-[debug] 	report for default#scalabalechat_2.12;1.0 runtime produced in C:\Users\ashu\Documents\ScalabaleChat\target\resolution-cache\reports\default-scalabalechat_2.12-runtime.xml
-[debug] 	report for default#scalabalechat_2.12;1.0 test produced in C:\Users\ashu\Documents\ScalabaleChat\target\resolution-cache\reports\default-scalabalechat_2.12-test.xml
-[debug] 	report for default#scalabalechat_2.12;1.0 provided produced in C:\Users\ashu\Documents\ScalabaleChat\target\resolution-cache\reports\default-scalabalechat_2.12-provided.xml
-[debug] 	report for default#scalabalechat_2.12;1.0 optional produced in C:\Users\ashu\Documents\ScalabaleChat\target\resolution-cache\reports\default-scalabalechat_2.12-optional.xml
-[debug] 	report for default#scalabalechat_2.12;1.0 compile-internal produced in C:\Users\ashu\Documents\ScalabaleChat\target\resolution-cache\reports\default-scalabalechat_2.12-compile-internal.xml
-[debug] 	report for default#scalabalechat_2.12;1.0 runtime-internal produced in C:\Users\ashu\Documents\ScalabaleChat\target\resolution-cache\reports\default-scalabalechat_2.12-runtime-internal.xml
-[debug] 	report for default#scalabalechat_2.12;1.0 test-internal produced in C:\Users\ashu\Documents\ScalabaleChat\target\resolution-cache\reports\default-scalabalechat_2.12-test-internal.xml
-[debug] 	report for default#scalabalechat_2.12;1.0 plugin produced in C:\Users\ashu\Documents\ScalabaleChat\target\resolution-cache\reports\default-scalabalechat_2.12-plugin.xml
-[debug] 	report for default#scalabalechat_2.12;1.0 sources produced in C:\Users\ashu\Documents\ScalabaleChat\target\resolution-cache\reports\default-scalabalechat_2.12-sources.xml
-[debug] 	report for default#scalabalechat_2.12;1.0 docs produced in C:\Users\ashu\Documents\ScalabaleChat\target\resolution-cache\reports\default-scalabalechat_2.12-docs.xml
-[debug] 	report for default#scalabalechat_2.12;1.0 pom produced in C:\Users\ashu\Documents\ScalabaleChat\target\resolution-cache\reports\default-scalabalechat_2.12-pom.xml
-[debug] 	report for default#scalabalechat_2.12;1.0 scala-tool produced in C:\Users\ashu\Documents\ScalabaleChat\target\resolution-cache\reports\default-scalabalechat_2.12-scala-tool.xml
-[debug] 	resolve done (2531ms resolve - 74ms download)
+[debug] :: resolution report :: resolve 860ms :: artifacts dl 28ms
+[debug] 	report for scalabalechat#scalabalechat_2.12;1.0 compile produced in C:\Users\ashu\ChatServer\target\resolution-cache\reports\scalabalechat-scalabalechat_2.12-compile.xml
+[debug] 	report for scalabalechat#scalabalechat_2.12;1.0 runtime produced in C:\Users\ashu\ChatServer\target\resolution-cache\reports\scalabalechat-scalabalechat_2.12-runtime.xml
+[debug] 	report for scalabalechat#scalabalechat_2.12;1.0 test produced in C:\Users\ashu\ChatServer\target\resolution-cache\reports\scalabalechat-scalabalechat_2.12-test.xml
+[debug] 	report for scalabalechat#scalabalechat_2.12;1.0 provided produced in C:\Users\ashu\ChatServer\target\resolution-cache\reports\scalabalechat-scalabalechat_2.12-provided.xml
+[debug] 	report for scalabalechat#scalabalechat_2.12;1.0 optional produced in C:\Users\ashu\ChatServer\target\resolution-cache\reports\scalabalechat-scalabalechat_2.12-optional.xml
+[debug] 	report for scalabalechat#scalabalechat_2.12;1.0 compile-internal produced in C:\Users\ashu\ChatServer\target\resolution-cache\reports\scalabalechat-scalabalechat_2.12-compile-internal.xml
+[debug] 	report for scalabalechat#scalabalechat_2.12;1.0 runtime-internal produced in C:\Users\ashu\ChatServer\target\resolution-cache\reports\scalabalechat-scalabalechat_2.12-runtime-internal.xml
+[debug] 	report for scalabalechat#scalabalechat_2.12;1.0 test-internal produced in C:\Users\ashu\ChatServer\target\resolution-cache\reports\scalabalechat-scalabalechat_2.12-test-internal.xml
+[debug] 	report for scalabalechat#scalabalechat_2.12;1.0 plugin produced in C:\Users\ashu\ChatServer\target\resolution-cache\reports\scalabalechat-scalabalechat_2.12-plugin.xml
+[debug] 	report for scalabalechat#scalabalechat_2.12;1.0 sources produced in C:\Users\ashu\ChatServer\target\resolution-cache\reports\scalabalechat-scalabalechat_2.12-sources.xml
+[debug] 	report for scalabalechat#scalabalechat_2.12;1.0 docs produced in C:\Users\ashu\ChatServer\target\resolution-cache\reports\scalabalechat-scalabalechat_2.12-docs.xml
+[debug] 	report for scalabalechat#scalabalechat_2.12;1.0 pom produced in C:\Users\ashu\ChatServer\target\resolution-cache\reports\scalabalechat-scalabalechat_2.12-pom.xml
+[debug] 	report for scalabalechat#scalabalechat_2.12;1.0 scala-tool produced in C:\Users\ashu\ChatServer\target\resolution-cache\reports\scalabalechat-scalabalechat_2.12-scala-tool.xml
+[debug] 	resolve done (860ms resolve - 28ms download)
 [info] Done updating.

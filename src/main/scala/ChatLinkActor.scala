@@ -1,29 +1,27 @@
-import ChatEvent.{IncomingMessage, Logout, UserJoined}
-import akka.actor.{Actor, ActorRef, PoisonPill}
-
+import Events._
+import akka.actor.Actor
 
 /**
-  * Created by ashu on 3/25/2017.
+  * Created by ashu on 3/26/2017.
   */
 class ChatLinkActor extends Actor {
-  var users: List[ActorRef] = List()
+
+  var couple: List[UserWithActor] = List()
 
   override def receive: Receive = {
-    case IncomingMessage(msg) =>
-      send(sender(), msg)
-    case Logout =>
-      sender() ! PoisonPill
-      self ! PoisonPill
-      println("user left, ending chat")
-    case UserJoined =>
-      println("Contgrats you got a user")
-      users = users :+ sender()
+    case UserJoined(userWithActor) =>
+      couple = couple :+ userWithActor
+      userWithActor.actor ! SystemMessage(s"You are now in the ChatNet ${ChatManager.userQueue.size}!!!")
+    case UserLeft(user) =>
+      send(IncomingMessage(user,"left"))
+    case msg: IncomingMessage =>
+      send(msg)
   }
 
-  def send(from: ActorRef, msg: String) = {
-    for (
-      x <- users
-      if x != sender()
-    ) yield x ! IncomingMessage(msg)
+  def send(msg: IncomingMessage):Unit = {
+    for(
+      x <- couple
+      if x.name != msg.user.name
+    ) yield x.actor ! msg
   }
 }

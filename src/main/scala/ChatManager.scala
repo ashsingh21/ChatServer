@@ -1,26 +1,25 @@
-import akka.actor.{ActorRef, ActorSystem, Props}
+import akka.actor.ActorSystem
+import akka.stream.ActorMaterializer
 
 import scala.collection.immutable.Queue
 
 /**
-  * Created by ashu on 3/25/2017.
+  * Created by ashu on 3/26/2017.
   */
-class ChatManager(actorSystem: ActorSystem) {
-  val chatQueue: Queue[ChatLink] = Queue()
-
-  def findOrCreate(actorRef: ActorRef)(implicit actorSystem: ActorSystem): Any = {
-    if (chatQueue.nonEmpty) {
-      val actor = chatQueue.dequeue
-      // TODO add logic
-    } else createUser
-  }
-
-  def createUser = {
-    val chatLink = ChatLink
-    chatQueue.enqueue(chatLink)
-  }
-}
-
 object ChatManager {
-  def apply(roomId: Int)(implicit actorSystem: ActorSystem) = new ChatManager(actorSystem)
+  //queue to connect two random users
+  var userQueue: Queue[ChatService] = Queue()
+
+  // if no user create a chat service else conenct the user to exisiting chat service
+  def createChat(implicit actorSystem: ActorSystem,actorMaterializer: ActorMaterializer): ChatService = {
+    if (userQueue.nonEmpty) {
+      val dequeu:(ChatService,Queue[ChatService]) = userQueue.dequeue
+      userQueue = dequeu._2
+      dequeu._1
+    } else {
+      val chatService = ChatService()
+      userQueue = userQueue.enqueue(chatService)
+      chatService
+    }
+  }
 }
