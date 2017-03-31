@@ -25,7 +25,7 @@ object server extends App{
     }
   }
 
-  val (host, port) = ("10.0.0.15", 8080)
+  val (host, port) = ("localhost", 8080)
 
   val bindingFuture = Http().bindAndHandle(route, host, port)
   println(s"Server is now online at http://$host:$port\nPress RETURN to stop...")
