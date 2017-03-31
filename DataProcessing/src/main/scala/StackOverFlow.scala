@@ -204,7 +204,7 @@ object StackOverFlow extends App {
       case _ =>
     }
   }
-
+  
   class Message extends Actor {
     override def receive: Receive = {
       case s: String => println(s)
