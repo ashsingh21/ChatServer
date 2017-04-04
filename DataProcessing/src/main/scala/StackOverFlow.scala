@@ -72,6 +72,7 @@ object StackOverFlow extends App {
                   favoriteCount: Int,
                   creationDate: String) extends Event
 
+   // for pattern matching and nice output format
   case class Answer(var id: String, var counter: Int) extends Event
   case class Question(var id: String, var counter: Int) extends Event
   case class AnswerCount(var id: String, var counter: Int) extends Event
