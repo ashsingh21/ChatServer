@@ -153,12 +153,12 @@ object StackOverFlow extends App {
   // prints the percentage of posts with negative score
   val negativeSink = Sink.foreach(printNegative)
 
+  // data pipeline as streams
   val graph = RunnableGraph.fromGraph(GraphDSL.create(sink) {
     implicit builder =>
       sinkFuture =>
         import akka.stream.scaladsl.Source
         val source: Outlet[String] = builder.add(Source.fromIterator(() => inputString)).out
-      //  val toMax1, toMax2, toMax3, toMax4, toMax5: FlowShape[Event, Event] = builder.add(toMax)
         val max: FlowShape[Event, Event] = builder.add(toMax)
 
         val broadcast = builder.add(Broadcast[Post](5))
@@ -209,7 +209,6 @@ object StackOverFlow extends App {
     override def receive: Receive = {
       case s: String => println(s)
     }
-
-  }
+}
 
 }
