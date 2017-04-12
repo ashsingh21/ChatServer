@@ -43,7 +43,6 @@ object Iot extends App {
   // Actor for creating feature vector of mock accelerometer data 
   class FeatureActor extends Actor {
     val count = 64
-    var accReadings: List[Accelerometer] = List()
     var acc: Map[String, List[Accelerometer]] = Map()
 
     override def receive: Receive = {
