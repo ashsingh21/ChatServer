@@ -99,8 +99,8 @@ object Iot extends App {
   val exchange = connection.publish(exchange = "amq.direct",
     routingKey = "accelerometer")
 
+ // create an actor for sink
   val featureActor = system.actorOf(Props[FeatureActor])
-
   val sink = Sink.actorRef(featureActor, Finished)
 
   // add  mock data to rabbitmq queue
