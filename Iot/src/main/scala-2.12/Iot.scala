@@ -40,7 +40,7 @@ object Iot extends App {
     }
   }
 
-  // Actor for feature processing
+  // Actor for creating feature vector of mock accelerometer data 
   class FeatureActor extends Actor {
     val count = 64
     var accReadings: List[Accelerometer] = List()
@@ -73,7 +73,7 @@ object Iot extends App {
       println(s"Accelerometer Features: Device Id: $deviceId, X: ${features.meanX}, Y: ${features.meanY}, Z: ${features.meanZ}")
     }
 
-    // calculate average to accelerometer readings
+    // calculate average of accelerometer readings
     def createFeatures(accReadings: List[Accelerometer]): AccelerometerFeatures = {
       val (sumX, sumY, sumZ, len) = accReadings.foldLeft((0.0, 0.0, 0.0, 0)) {
         case ((x, y, z, length), reading) =>
