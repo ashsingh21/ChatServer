@@ -7,3 +7,6 @@ hosted at https://archive.org/details/stackexchange it is compatible with all th
 
 # Flow Graph
 ![Alt text](FlowGraph.jpg?raw=true "Optional Title")
+
+# A simple iot use of akka streams using RabbitMQ
+![Alt text](simpleIot.png?raw=true "Optional Title")
