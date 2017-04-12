@@ -11,7 +11,7 @@ import scala.util.Random
 /**
   * Created by ashu on 4/11/2017.
   */
-object Test extends App {
+object Iot extends App {
   implicit val system = ActorSystem()
   implicit val mat = ActorMaterializer()
 
