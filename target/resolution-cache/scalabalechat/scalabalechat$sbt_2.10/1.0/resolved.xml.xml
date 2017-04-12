@@ -4,7 +4,7 @@
 		module="scalabalechat$sbt_2.10"
 		revision="1.0"
 		status="integration"
-		publication="20170326113752"
+		publication="20170407002944"
 	/>
 	<configurations>
 		<conf name="default" visibility="public"/>
